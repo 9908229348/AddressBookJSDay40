@@ -84,7 +84,7 @@ class AddressBook{
     }
 }
 
-let person = new AddressBook("Kallavai", "Sravanthi", "abcd", "Anantapur", "AndhraPradesh", 123456 , "98 9908229348", "srav12@gmail.com");
+let person = new AddressBook("Kallavai", "Sravanthi", "abcd", "Anantapur", "AndhraPradesh", "123456" , "98 9908229348", "srav12@gmail.com");
 console.log(person.toString());
 try{
     person.firstName = "kallavai";
@@ -133,3 +133,9 @@ try{
 }catch(e){
     console.log(e);
 }
+
+let person1 = new AddressBook("Sravanthi", "Kallavai", "Abcde", "RangaReddy", "Telangana", "123453", "88 8765435621","kalva32@gmail.com" );
+let addressBookArray = [];
+addressBookArray[0] = person1;
+addressBookArray[1] = person;
+console.log(addressBookArray);
