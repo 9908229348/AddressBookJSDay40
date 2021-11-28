@@ -135,7 +135,14 @@ try{
 }
 
 let person1 = new AddressBook("Sravanthi", "Kallavai", "Abcde", "RangaReddy", "Telangana", "123453", "88 8765435621","kalva32@gmail.com" );
+let person2 = new AddressBook("Bhavya", "Maligi", "Abcde", "Bbbbb", "Ddddd","234564", "99 8765435665", "bhavya122@gmail.com");
 let addressBookArray = [];
 addressBookArray[0] = person1;
-addressBookArray[1] = person;
+addressBookArray[1] = person2;
 console.log(addressBookArray);
+
+//Uc4-Editing City which has firstName = "Sravanthi"
+let objIndex = addressBookArray.findIndex((obj => obj.firstName == "Sravanthi"));
+console.log("Before Update : " + addressBookArray[objIndex]);
+addressBookArray[objIndex].city = "Kurnool";
+console.log("After Update : " + addressBookArray[objIndex]);
