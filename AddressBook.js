@@ -155,3 +155,7 @@ let index = addressBookArray.findIndex((obj => obj.firstName == "Hema"));
 addressBookArray.splice(index, 1);
 console.log("After Deletion");
 console.log(addressBookArray);
+
+//Uc6-Ability to find Number of Contacts in AddressBook
+let count = addressBookArray.reduce((counter, person) => counter + 1, 0);
+console.log(count);
